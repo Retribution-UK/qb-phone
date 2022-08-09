@@ -1,8 +1,10 @@
 Config = Config or {}
 Config.BillingCommissions = { -- This is a percentage (0.10) == 10%
-    mechanic = 0.10
+    mechanic = 0.10,
+    ottos = 0.20,
+    tuner = 0.20
 }
-Config.Linux = false -- True if linux
+Config.Linux = true -- True if linux
 Config.TweetDuration = 12 -- How many hours to load tweets (12 will load the past 12 hours of tweets)
 Config.RepeatTimeout = 2000
 Config.CallRepeats = 10
@@ -93,7 +95,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 8,
         Alerts = 0,
-    },
+    },--[[ 
     ["crypto"] = {
         app = "crypto",
         color = "#004682",
@@ -103,7 +105,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 9,
         Alerts = 0,
-    },
+    }, ]]
     ["racing"] = {
         app = "racing",
         color = "#353b48",
@@ -123,7 +125,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 11,
         Alerts = 0,
-    },
+    },--[[ 
     ["meos"] = {
         app = "meos",
         color = "#004682",
@@ -133,7 +135,7 @@ Config.PhoneApplications = {
         blockedjobs = {},
         slot = 13,
         Alerts = 0,
-    },
+    }, ]]
     ["lawyers"] = {
         app = "lawyers",
         color = "#26d4ce",
